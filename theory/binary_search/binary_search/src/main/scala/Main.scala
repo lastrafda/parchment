@@ -1,4 +1,5 @@
 import scala.annotation.tailrec
+
 @main def main: Unit = {
   val numbers: Array[Int]        = Array(1, 14, 20, 32, 33, 45, 76, 77, 85, 97)
   val indexOfTwenty: Option[Int] = binarySearch(numbers, 20)
