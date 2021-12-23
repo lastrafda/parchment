@@ -8,6 +8,7 @@
   // "Not found"
 }
 
+// courtesy: https://www.24tutorials.com/scala/binary-search-in-scala-iterative-tail-recursion/
 def binarySearch(numbers: Array[Int], num: Int): Option[Int] = {
   def loop(numbers: Array[Int], target: Int, low: Int, high: Int): Option[Int] = {
     if high < low then return None
