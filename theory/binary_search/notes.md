@@ -2,7 +2,17 @@
 
 La búsqueda binaria es un algoritmo eficiente de busqueda (duh) en el que se busca un número en un conjunto de elementos ordenados partiendo por la mitad.
 
+### Idea general
+  
+Para buscar el elemento `e` en la lista `L`
+1. Escoge un indice `i` que divide `L` masomenos por la mitad.
+2. Prgunta si `L[i] == e` .
+3. Sino, pregunta si L[i] es mayor o menor que `e`.
+4. Dependiendo de la respuesta, busca `e` en la mitad izquierda o derecha de `L`.  
+
 Acá hay una explicación detallada, la podría copypastear pero mejor revisar siguente link de la espectacular gente de Khan Acadamy: [Busqueda Binaria](https://es.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+
+---
 
 Un ejemplo super bueno en el que se aplica este algoritmo es en el comando `git bisect`. Alguna vez te pasó que comenzaste a programar, hiciste 32 commits, quisiste hacer push pero te diste cuenta que se rompieron los tests y no sabes desde qué commit comenzó a fallar? Podrías ir probando commit por commit, 32 veces... o podrías utilizar `git bisect` y saber en máximo 5 intentos qué commit fué el culpable, debido a que emplea la búsqueda binaria.
 
